@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <div>
+
+      <teszt-component></teszt-component>
+      <hr>
       <button @click="change">Push To Array</button>
       <simple-modal v-model="isShow" title="Modal Header">
         <template slot="body">
@@ -14,7 +16,7 @@
         </template>
       </simple-modal>
       <button @click="isShow = !isShow">Modal show/hide button</button>
-    </div>
+
     <HelloWorld/>
     <TesztComponent/>
     <ListItem/>
